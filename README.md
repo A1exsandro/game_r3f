@@ -23,3 +23,8 @@ yarn dev
 * https://gero3.github.io/facetype.js/
 * https://fonts.google.com/?query=noto+sans+japanese
 * kanas.map((kana) => kana.character.hiragana + kana.character.katakana).join("")
+
+### Games
+
+* https://github.com/pmndrs/zustand
+* yarn add zustand

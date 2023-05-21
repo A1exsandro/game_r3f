@@ -2,8 +2,20 @@ import { Cylinder, MeshReflectorMaterial, OrbitControls, Text3D } from "@react-t
 import { CylinderCollider, RigidBody } from "@react-three/rapier";
 import { Torri } from "./Torii";
 import { kanas } from "../constants";
+import { useGameStore } from "../store";
+import { useEffect } from "react";
 
 export const Experience = () => {
+  const startGame = useGameStore((state) => state.startGame)
+  const { level, currentKana } = useGameStore((state) => ({
+    level: state.level,
+    currentKana: state.currentKana
+  }))
+
+  console.log(level,)
+
+  useEffect(() => {}, [])
+
   return (
     <>
       <OrbitControls />
