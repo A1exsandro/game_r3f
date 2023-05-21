@@ -12,3 +12,8 @@ yarn dev
 ## Some dependencies
 
 * yarn add @react-three/rapier
+
+## Some instructions
+
+* https://poly.pizza/m/07__lYTDdEH for download of 3d models
+* npx gltfjsx ./public/models/torii/model.glb
