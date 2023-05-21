@@ -19,6 +19,8 @@ yarn dev
 * https://poly.pizza/m/07__lYTDdEH for download of 3d models
 * npx gltfjsx ./public/models/torii/model.glb
 
+* https://market.pmnd.rs/model/male
+
 ### Fonts
 * https://gero3.github.io/facetype.js/
 * https://fonts.google.com/?query=noto+sans+japanese
