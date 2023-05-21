@@ -1,6 +1,7 @@
-import { Cylinder, MeshReflectorMaterial, OrbitControls } from "@react-three/drei";
+import { Cylinder, MeshReflectorMaterial, OrbitControls, Text3D } from "@react-three/drei";
 import { CylinderCollider, RigidBody } from "@react-three/rapier";
 import { Torri } from "./Torii";
+import { kanas } from "../constants";
 
 export const Experience = () => {
   return (
@@ -43,6 +44,12 @@ export const Experience = () => {
             <meshStandardMaterial color="white" />
           </Cylinder>
         </RigidBody>
+
+        {/* KANA */}
+        <Text3D font={"./fonts/NotoSansJP_ExtraBold_Regular-New.json"} size={0.82}>
+          {kanas[0].character.hiragana}
+          <meshNormalMaterial />
+        </Text3D>
       </group>
     </>
   );
