@@ -5,6 +5,7 @@ import { kanas } from "../constants";
 import { useGameStore } from "../store";
 import { useEffect } from "react";
 import { KanaSpots } from "./KanaSpots";
+import { CharacterController } from "./CharacterController";
 
 export const Experience = () => {
   const startGame = useGameStore((state) => state.startGame)
@@ -47,12 +48,15 @@ export const Experience = () => {
 
       <group position-y={-1}>
       {/* STAGE */}
-        <RigidBody colliders={false} type="fixed" position={-0.5}>
+        <RigidBody colliders={false} type="fixed" position={-0.5} friction={2}>
           <CylinderCollider args={[1/2, 5]} />
           <Cylinder scale={[5, 1, 5]} receiveShadow>
             <meshStandardMaterial color="white" />
           </Cylinder>
         </RigidBody>
+
+        {/* CHARACTER */}
+        <CharacterController />
 
         {/* KANA */}
         <KanaSpots />
