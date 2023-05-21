@@ -4,17 +4,14 @@ import { Torri } from "./Torii";
 import { kanas } from "../constants";
 import { useGameStore } from "../store";
 import { useEffect } from "react";
+import { KanaSpots } from "./KanaSpots";
 
 export const Experience = () => {
   const startGame = useGameStore((state) => state.startGame)
-  const { level, currentKana } = useGameStore((state) => ({
-    level: state.level,
-    currentKana: state.currentKana
-  }))
 
-  console.log(level,)
-
-  useEffect(() => {}, [])
+  useEffect(() => {
+    startGame()
+  }, [])
 
   return (
     <>
@@ -58,10 +55,7 @@ export const Experience = () => {
         </RigidBody>
 
         {/* KANA */}
-        <Text3D font={"./fonts/NotoSansJP_ExtraBold_Regular-New.json"} size={0.82}>
-          {kanas[0].character.hiragana}
-          <meshNormalMaterial />
-        </Text3D>
+        <KanaSpots />
       </group>
     </>
   );

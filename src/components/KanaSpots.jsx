@@ -1,4 +1,4 @@
-import { Center, Cylinder, Text3D } from "@react-three/drei";
+import { Cylinder, Text3D } from "@react-three/drei";
 import { CylinderCollider, RigidBody } from "@react-three/rapier";
 import { useGameStore } from "../store";
 
@@ -26,16 +26,13 @@ export const KanaSpots = () => {
           </Cylinder>
         </RigidBody>
 
-        <Center position-y={0.8}>
-          <Text3D
-            font={"./fonts/Noto Sans JP ExtraBold_Regular.json"}
-            size={0.82}
-            rotation-y={-(index / level[currentStage].length) * Math.PI * 2}
+          <Text3D 
+            font={"./fonts/NotoSansJP_ExtraBold_Regular-New.json"}
+            size={0.82} 
           >
             {kana.character.hiragana}
             <meshNormalMaterial />
-          </Text3D>
-        </Center>
+          </Text3D> 
       </group>
     </group>
   ));
