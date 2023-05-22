@@ -10,7 +10,10 @@ import { useGLTF,
 
 export default function Model(props) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/male/model.gltf')
+  const { nodes, materials } = useGLTF(
+  'https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/male/model.gltf'
+  )
+  
   return (
     <group ref={group} {...props} dispose={null}>
       <group scale={0.64} >
