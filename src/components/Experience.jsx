@@ -7,12 +7,7 @@ import { useEffect } from "react";
 import { KanaSpots } from "./KanaSpots";
 import { CharacterController } from "./CharacterController";
 
-export const Experience = () => {
-  const startGame = useGameStore((state) => state.startGame)
-
-  useEffect(() => {
-    startGame()
-  }, [])
+export const Experience = () => { 
 
   return (
     <>

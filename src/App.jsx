@@ -4,6 +4,7 @@ import { Experience } from "./components/Experience"
 import { Suspense, useMemo } from "react"
 import { Physics } from "@react-three/rapier"
 import { generateGameLevel } from "./store"
+import { Menu } from "./components/Menu"
 
 export const Controls = {
   forward: "forward",
@@ -37,6 +38,7 @@ function App() {
           </Physics>
         </Suspense>
       </Canvas>
+      <Menu /> 
     </KeyboardControls>
   )
 }
