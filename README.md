@@ -30,3 +30,5 @@ yarn dev
 
 * https://github.com/pmndrs/zustand
 * yarn add zustand
+
+building
