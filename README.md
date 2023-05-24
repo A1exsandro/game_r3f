@@ -1,5 +1,6 @@
 # r3f-vite-starter
 A boilerplate to build R3F projects
+A project make with vite
 
 ```
 yarn
